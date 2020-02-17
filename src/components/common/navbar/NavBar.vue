@@ -1,8 +1,9 @@
 <template>
   <div id="nav-bar">
-    <el-row :gutter="0">
+    <el-row :gutter="0" align="center">
       <el-col :span="10" align="center"><div><slot name="left"></slot></div></el-col>
       <el-col :span="12" align="center"><div><slot name="center"></slot></div></el-col>
+      <!-- <el-col :span="2"></el-col> -->
     </el-row>
   </div>
 </template>
@@ -17,14 +18,9 @@
   #nav-bar {
     position: relative;
     z-index: 10;
-
-    /* display: flex; */
-
     height: 44px;
     line-height: 44px;
     text-align: center;
     background-color: #74B243;
   }
-
-
 </style>
